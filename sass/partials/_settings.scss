@@ -2,18 +2,18 @@
 $font-default: 'Open Sans', sans-serif;
 
 // Colours
-$pink: #eb008b;
-$light-grey: #666666;
-$dark-grey: #323232;
+$blue: #21bcf4;
+$grey: #9e9e9e;
+// $dark-grey: #323232;
 
 // Grid settings
 $grid-width: 1200px;
 $grid-columns: 12;
-$grid-gutter: 20px;
-$grid-generate: true;
-$grid-column-prefix: 'column-';
-$grid-row-prefix: 'row';
-$grid-push-prefix: 'push-';
+$grid-gutter: 30px;
+$grid-generate: false;
+// $grid-column-prefix: 'column-';
+// $grid-row-prefix: 'row';
+// $grid-push-prefix: 'push-';
 
 // Responsive sizes
 $phone: '(min-width: 480px)';
