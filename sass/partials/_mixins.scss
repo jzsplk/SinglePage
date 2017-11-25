@@ -5,6 +5,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 @mixin font-default ($weight: 400, $style: normal) {
   font-family: $font-default;
   font-weight: $weight;
