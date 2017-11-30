@@ -25,6 +25,7 @@ body {
 	@include font-default();
   font-size: 2.4rem;
   color: $grey;
+  background: #f4f4f4;
 }
 
 img {
@@ -44,4 +45,20 @@ img {
 
 .grid {
 	@include row;
+}
+
+.background-white {
+	background: white;
+} 
+
+.section {
+	padding: 80px 20px;
+	@include clearfix;
+	.description {
+		margin-bottom: 60px;
+	}
+	.section-footer {
+		clear: both;
+		padding-top: 60px;
+	}
 }

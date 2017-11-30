@@ -1,1 +1,80 @@
 /* Front page */
+.hero {
+	background: url('../images/layout/hero-background.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	padding-top: 100px;
+	.grid {
+		height: 100%;
+		display: table;
+		vertical-align: middle;
+		.wrapper {
+			display: table-cell;
+			vertical-align: middle;
+ 		}
+
+	}
+	.text {
+      @include column(6);
+      h1 {
+      	color: white;
+      	font-size: 6.0rem;
+      	font-weight: 700;
+        margin-bottom: 30px;
+      }
+      p {
+      	color: white;
+      	font-size: 3.0rem;
+      	font-weight: 300;
+      	margin-bottom: 30px;
+      }
+
+	}
+
+	.image {
+		@include column(4);
+		float: right !important;
+	}
+}
+
+.features {
+	.feature {
+		@include column(4);
+		img {
+			margin-bottom: 50px;
+		}
+		h1 {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.pricing {
+	.table {
+		@include column(4);
+		h1 {
+			background-color: $blue;
+			color: white;
+			height:80px;
+			line-height: 80px;
+			font-size: 3.0rem;
+			font-weight: 700;
+			@include border-radius(3px);
+			margin: 0;
+		}
+
+		h2 {
+          font-size: 6.0rem;
+          font-weight: 700;
+          padding: 25px 0;
+          border-bottom: 1px solid #bdbdbd;
+          margin: 0;
+		}
+		p {
+		  padding: 30px 0;
+          border-bottom: 1px solid #bdbdbd;
+          margin:0 0 30px 0;
+		}
+	}
+}

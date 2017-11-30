@@ -1,1 +1,51 @@
 /* Header */
+.header {
+	height: 100px;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	@include box-shadow(0 2px 4px rgba(black, 0.1));
+	.logo {
+		@include column(2);
+		a {
+			font-size: 3.0rem;
+			font-weight: 700;
+			color: $grey;
+			line-height: 100px;
+			&:hover {
+				color: $blue;
+			}
+			.highlighted {
+				color: $blue;
+			}
+		}
+
+	}
+
+	.navigation {
+		@include column(10);
+		.menu {
+			float: right;
+			.item {
+				float: left;
+				height: 100px;
+				margin-left: 60px;
+				a {
+					color: $grey;
+					font-size: 2.4rem;
+					line-height: 100px;
+					&:hover {
+						color: $blue;
+					}
+				}
+				&.active {
+					a {
+                        color: $blue;
+					}
+				}
+			}
+		}
+	}
+}

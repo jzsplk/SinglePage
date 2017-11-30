@@ -1,0 +1,19 @@
+/* Footer */
+.hero {
+  background: url("../images/layout/hero-background.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 100px; }
+  .hero .grid {
+    height: 100%;
+    display: table;
+    vertical-align: middle; 
+  }
+    .hero .grid .wrapper {
+      display: table-cell;
+      vertical-align: middle; 
+    }
+
+
+/*# sourceMappingURL=_footer.css.map */

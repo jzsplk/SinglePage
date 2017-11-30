@@ -19,9 +19,34 @@ h3 {
 
 p {
 	margin-bottom: 1rem;
+	font-weight: 300;
 }
 
 a {
 	text-decoration: none;
 	@include transition(0.4s);
+}
+
+.button {
+	display: inline-block;
+	font-size: 2.1rem;
+	font-weight: 700;
+	color: $blue;
+	height: 60px;
+	padding: 18px 60px;
+	border: 2px solid $blue;
+	text-transform: uppercase;
+	@include border-radius(60px);
+	&:hover {
+		background: $blue;
+		color: white;
+	}
+	&.white {
+		color: white;
+		border-color: white;
+		&:hover {
+          background: white;
+          color: $blue;
+		}
+	}
 }
