@@ -78,3 +78,36 @@
 		}
 	}
 }
+
+.gallery {
+	.image {
+		@include column(4);
+		padding: 1px !important; 
+	}
+}
+
+.testimonials {
+	.testimonial {
+		@include column(6);
+		margin-bottom: 40px !important;
+
+		.image {
+			@include column(4);
+		}
+
+		.text {
+        	@include column(8);
+        	h1 {
+        		font-size: 3.0rem;
+        		margin: 0 0 10px 0;
+        	}
+        	h3 {
+        		color: #bdbdbd;
+        		font-size: 2.1rem;
+        		text-transform: initial;
+        		font-weight: 300;
+        		font-style: italic;
+        	}
+		}
+	}
+}

@@ -21,7 +21,22 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="stylesheets/main.css">
+    
+    <!-- Fancybox -->
+    <!-- jquery from fancybox demo  -->
+    <script type="text/javascript" src="scripts/vendor/jquery-1.10.2.min.js"></script>
+     <!--  fancybox js file of 2.1.5  -->
+    <script type="text/javascript" src="scripts/vendor/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="scripts/vendor/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="scripts/vendor/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="scripts/vendor/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="scripts/vendor/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+ 
+    
     <!-- Modernizr script has to be in head -->
     <script src="scripts/vendor/modernizr.min.js"></script>
 	</head>
@@ -39,11 +54,11 @@
 				</div>
 				<nav class="navigation">
 					<ul class="menu">
-						<li class="item"><a class="uppercase" href="#">Home</a></li>
-						<li class="item active"><a class="uppercase" href="#">Features</a></li>
-						<li class="item "><a class="uppercase" href="#">Pricing</a></li>
-						<li class="item"><a class="uppercase" href="#">Gallery</a></li>
-						<li class="item"><a class="uppercase" href="#">Testimonials</a></li>
+						<li class="item" ><a class="uppercase" data-target="home" href="#">Home</a></li>
+						<li class="item active" ><a class="uppercase" data-target="features" href="#">Features</a></li>
+						<li class="item " ><a class="uppercase" data-target="pricing" href="#">Pricing</a></li>
+						<li class="item" ><a class="uppercase" data-target="gallery" href="#">Gallery</a></li>
+						<li class="item" ><a class="uppercase" data-target="testimonials" href="#">Testimonials</a></li>
 					</ul>
 				</nav>
 
@@ -55,7 +70,7 @@
 		<!-- Main content -->
 		<main class="main" role="main">
 
-			<section class="hero">
+			<section class="hero" id="hero">
 				<div class="grid">
 					<div class="wrapper">
 						<article class="text">
@@ -72,7 +87,7 @@
 				
 			</section>
 
-			<section class="features section">
+			<section class="features section" id="features">
 				<div class="grid">
 					<h2 class="text-center">Features section heading</h2>
 					<p class="text-center description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
@@ -101,7 +116,7 @@
 					
 			</section>
 
-      <section class="pricing background-white section">
+      <section class="pricing background-white section" id="pricing">
       	<div class="grid">
       		<article class="table text-center">
 	      		<h1>Pricing Title</h1>
@@ -125,52 +140,53 @@
 	      	
       </section>
 
-	  <section class="gallery section">
+	  <section class="gallery section" id="gallery">
 	  	<div class="grid">
 	  		<ul class="items">
-				<li class="iamge">
-					<a href="#" class="gallery-image">
-						<img src="" alt="">
+				<li class="image">
+					<a href="images/layout/gallery-image.jpg"  class="fancybox" rel="gallery">
+						<img src="images/layout/gallery-image.jpg" >
 					</a>
 				</li>
-				<li class="iamge">
-					<a href="#" class="gallery-image">
-						<img src="" alt="">
+				<li class="image">
+					<a href="images/layout/gallery-image.jpg"  class="fancybox" rel="gallery">
+						<img src="images/layout/gallery-image.jpg" >
 					</a>
 				</li>
-				<li class="iamge">
-					<a href="#" class="gallery-image">
-						<img src="" alt="">
+				<li class="image">
+					<a href="images/layout/gallery-image.jpg"  class="fancybox" rel="gallery">
+						<img src="images/layout/gallery-image.jpg" >
 					</a>
 				</li>
-				<li class="iamge">
-					<a href="#" class="gallery-image">
-						<img src="" alt="">
+				<li class="image">
+					<a href="images/layout/gallery-image.jpg"  class="fancybox" rel="gallery">
+						<img src="images/layout/gallery-image.jpg" >
 					</a>
 				</li>
-				<li class="iamge">
-					<a href="#" class="gallery-image">
-						<img src="" alt="">
+					
+				<li class="image">
+					<a href="images/layout/gallery-image.jpg"  class="fancybox" rel="gallery">
+						<img src="images/layout/gallery-image.jpg" >
 					</a>
 				</li>
-				<li class="iamge">
-					<a href="#" class="gallery-image">
-						<img src="" alt="">
+				<li class="image">
+					<a href="images/layout/gallery-image.jpg"  class="fancybox" rel="gallery">
+						<img src="images/layout/gallery-image.jpg" >
 					</a>
 				</li>
-				</ul>
+			</ul>
 	  	</div>
 				
 	  </section>
 
-      <section class="testimonials background-white section">
+      <section class="testimonials background-white section" id="testimonials">
       	<div class="grid">
       		<h2 class="text-center">Testimonials section heading</h2>
 			<p class="text-center description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
 
 			<article class="testimonial">
 				<div class="image">
-					<img src="" alt="">
+					<img src="images/icons/icon-avater@2x.png">
 				</div>
 				<div class="text">
 					<h1>John Doe</h1>
@@ -180,7 +196,7 @@
 			</article>
 			<article class="testimonial">
 				<div class="image">
-					<img src="" alt="">
+					<img src="images/icons/icon-avater@2x.png">
 				</div>
 				<div class="text">
 					<h1>John Doe</h1>
@@ -190,7 +206,7 @@
 			</article>
 			<article class="testimonial">
 				<div class="image">
-					<img src="" alt="">
+					<img src="images/icons/icon-avater@2x.png">
 				</div>
 				<div class="text">
 					<h1>John Doe</h1>
@@ -200,7 +216,7 @@
 			</article>
 			<article class="testimonial">
 				<div class="image">
-					<img src="" alt="">
+					<img src="images/icons/icon-avater@2x.png">
 				</div>
 				<div class="text">
 					<h1>John Doe</h1>
@@ -223,15 +239,23 @@
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="grid">
-				<p class="text-center">Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut <a href="">labore et </a>labore et </p>
+				<p class="uppercase text-center">Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut <a href="">labore et </a>labore et </p>
 			</div>
 			
 		</footer>
-
+        
 		<!-- Include scripts -->
-		<script src="js/vendor/jquery.min.js"></script>
-		<script src="js/vendor/touche.min.js"></script>
-		<script src="js/min/main.min.js"></script>
+	<!-- 	<script src="scripts/vendor/jquery.min.js"></script> -->
+		<script src="scripts/vendor/touche.min.js"></script>
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script src="scripts/vendor/jquery.mousewheel.pack.js?v=3.1.3"></script>
+		<!--main fancy box js -->
+<!-- 		<script src="scripts/vendor/jquery.fancybox.pack.js?v=2.1.5"></script> -->
+
+		<script src="scripts/min/main.min.js"></script>
+
+	    
+
 
 		<!-- Google Analytics -->
 		<script>
