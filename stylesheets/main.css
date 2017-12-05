@@ -2787,6 +2787,7 @@ a {
       .header .logo a .highlighted {
         color: #21bcf4; }
   .header .navigation {
+    display: none;
     position: fixed;
     padding: 0 20px;
     background: white;
@@ -2800,6 +2801,7 @@ a {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); }
     @media (min-width: 960px) {
       .header .navigation {
+        display: block !important;
         position: static;
         width: 100%;
         float: none;

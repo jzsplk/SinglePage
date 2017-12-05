@@ -25,6 +25,7 @@
 	}
 
 	.navigation {
+		display: none;
 		position: fixed;
 		padding: 0 20px;
 		background:white;
@@ -36,6 +37,7 @@
 		@include border-radius(3px);
 		@include box-shadow(0 0 50px rgba(black, 0.3));
         @include respond($laptop) {
+        	display: block !important;
         	position: static;
         	@include column(10);
             box-shadow: none;

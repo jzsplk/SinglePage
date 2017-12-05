@@ -1,14 +1,9 @@
-// (function($) {
+(function($) {
 
 // 	// Document ready
 // 	$(document).ready(function() {
 //       //fancybox initialzation
 //       $('.fancybox').fancybox();
-
-      
-// 	});
-
-// })(jQuery);
 $(document).ready(function() {
 			/*
 			 *  Simple image gallery. Uses default settings
@@ -23,6 +18,12 @@ $(document).ready(function() {
                 _this.parent().addClass('active').siblings().removeClass('active');
                 scrollTo(target);
 				return false;
+			});
+
+			//Mobile toggle
+			$('.mobile-toggle').on('click', function(){
+     			$('.navigation').fadeToggle();
+     			return false;
 			});
 
 
@@ -194,3 +195,8 @@ $(document).ready(function() {
 		    	});
 		    }
 		});
+      
+// 	});
+
+})(jQuery);
+
